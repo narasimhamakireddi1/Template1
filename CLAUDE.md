@@ -13,8 +13,10 @@ A premium **Indian restaurant** website template — single-page, vanilla HTML5 
 | File | Size | Purpose |
 |---|---|---|
 | `index.html` | ~77 KB | All markup, content, SEO tags, schema |
-| `styles.css` | ~47 KB | All styles, CSS variables, responsive layout |
+| `styles.css` | ~50 KB | All styles, CSS variables, responsive layout |
 | `script.js` | ~17 KB | All interactivity — no external JS dependencies |
+
+**Git repository:** https://github.com/narasimhamakireddi1/Template1.git (branch: `main`)
 
 ---
 
@@ -73,14 +75,19 @@ All of this lives in `index.html` and the JSON-LD `<script>` block in `<head>`. 
 
 ### 1. Navigation (`#mainNav`)
 - Sticky, fixed to top
-- Transparent on load; gets `.scrolled` class (frosted glass background) when `window.scrollY > 60`
+- Transparent on load; gets `.scrolled` class (frosted glass `rgba(8,8,8,.92)`) when `window.scrollY > 60`
 - Logo: `✦ Zaffran`
 - Nav links: Our Story · Signature Dishes · Menu · Experience · Gallery · Contact
 - Right side: theme toggle button, "Reserve Table" CTA (`btn--primary btn--sm`), hamburger (mobile only)
 - Active link: `.active` class set by `IntersectionObserver` in `initActiveNavLinks()`
+- **Theme-aware colours:**
+  - Hero top (not scrolled): always white text/icons regardless of theme (hero image is always dark)
+  - Scrolled dark theme: links `rgba(255,255,255,.72)`, white on hover
+  - Scrolled light theme: cream background `rgba(248,245,239,.96)`, dark text, drop-shadow separator
 
 ### 2. Mobile Menu (`#mobileMenu`)
 - Slides in from the right (`translateX(100%)` → `translateX(0)`)
+- Uses `visibility: hidden` by default and `visibility: visible` when open — prevents the drawer from leaking into layout on mobile browsers
 - Same links as desktop nav plus Reviews
 - Overlay (`#menuOverlay`) covers the rest of the page with blur
 - Closes on: close button, overlay click, Escape key, any link click
@@ -94,18 +101,23 @@ All of this lives in `index.html` and the JSON-LD `<script>` block in `<head>`. 
 - Eyebrow: "Est. 2011 · New York City"
 - `<h1>`: "Zaffran" with animated saffron underline (`heroLineIn` keyframe, fires after 1.4s)
 - Tagline: italic, Cormorant Garamond font
-- Two CTAs: "Reserve a Table" (`.btn--primary`) and "View Menu" (`.btn--ghost`)
+- Two CTAs: "Reserve a Table" (`.btn--primary`) → `#reservationForm` and "View Menu" (`.btn--ghost`) → `#menu`
+- `.btn--ghost` always uses white text + `rgba(255,255,255,.65)` border — hero image is always dark
 - Glassmorphism stats bar (`.hero__stats`): 4 counters animated via `data-count` attribute
-- Scroll indicator: animated pulsing line with "Discover" label
+  - Always dark glass (`rgba(0,0,0,.45)`) regardless of light/dark theme
+  - `bottom: 7rem` desktop · `5rem` mobile; `max-width: calc(100% - 3rem)` prevents clipping
+  - Hidden at `≤400px`
+- Scroll indicator ("Discover") has been **removed**
+- `.hero__content` has `padding-bottom: 10rem` (desktop) / `7rem` (mobile) to prevent content overlapping the stats bar
 
 ### 4. About (`#about`)
 - Two-column grid: images left, text right
-- Main image: `photo-1577219491135-ce391730fb2c` (chef)
+- Main image: `photo-1577219491135-ce391730fb2c` (chef) — `aspect-ratio: 3/4` desktop, `16/9` on mobile
 - Accent image (overlapping bottom-right): `photo-1574484284002-952d92456975` (curry) with "Chef's Pride" badge
 - Story: Rajasthan royal kitchens + Paris training → founded 2011
 - Chef quote: *"Indian cuisine is not just food. It is memory, ritual, and love — layered in a single bite."*
 - Three value cards: Farm to Tandoor · Michelin Starred · 149 Spices
-- CTA: "Book Your Experience" → `#reservation`
+- CTA: "Book Your Experience" → `#reservationForm`
 
 ### 5. Signature Dishes (`#dishes`)
 - Background: `section--dark` (`--c-bg-2`)
@@ -201,7 +213,9 @@ All of this lives in `index.html` and the JSON-LD `<script>` block in `<head>`. 
 
 ### 9. Reservation (`#reservation`)
 - Background: `section--dark`
-- Two-column: contact details left, form right
+- Two-column: contact details left, form right (stacks to 1-col on tablet/mobile)
+- The `<form>` element has `id="reservationForm"` — **all** "Reserve a Table" / "Book a Table" links across the site point to `#reservationForm` (not `#reservation`) so they land directly on the form
+- On mobile: left-column contact details stack vertically and centre-align
 - Form fields (all validated client-side):
   - First Name, Last Name (required, min 2 chars)
   - Email (required, regex), Phone (required, min 7 chars)
@@ -276,9 +290,11 @@ All of this lives in `index.html` and the JSON-LD `<script>` block in `<head>`. 
 
 ### 15. Floating Action Buttons (`.floating-actions`)
 Fixed bottom-right, three FABs stacked:
-1. **Reserve** (`.fab--primary`, gold) → `#reservation` — shows "Reserve" label on hover
-2. **WhatsApp** (`.fab--whatsapp`, green) → `https://wa.me/15558765432`, `target="_blank"`
-3. **Call** (`.fab--call`, card background) → `tel:+15558765432`
+1. **Reserve** (`.fab--primary`, gold) → `#reservationForm` — pill shape; label "Reserve" hidden by default (revealed on hover desktop); always visible on mobile
+2. **WhatsApp** (`.fab--whatsapp`, green circle) → `https://wa.me/15558765432`, `target="_blank"`
+3. **Call** (`.fab--call`, card background circle) → `tel:+15558765432`
+
+On mobile all three FABs are circular (46 px). The Reserve button keeps its pill + "Reserve" label always visible so it's identifiable as the primary CTA.
 
 ### 16. Scroll Progress Bar (`#scrollProgress`)
 - Fixed 2px bar at very top of viewport (z-index 9999)
@@ -377,17 +393,21 @@ Hero `.reveal` elements are triggered immediately (100ms timeout) rather than on
 |---|---|---|
 | `heroZoom` | `.hero__img` | scale 1.05→1 over 12s |
 | `heroLineIn` | `.hero__title span::after` | saffron underline width 0→60% after 1.4s |
-| `scrollPulse` | `.hero__scroll-line` | pulsing vertical line |
 | `lightboxIn` | `.lightbox__img` | scale 0.95→1 on open |
+
+Note: `scrollPulse` keyframe (hero scroll indicator) has been removed along with the "Discover" element.
 
 ### Responsive Breakpoints
 
 | Breakpoint | Changes |
 |---|---|
-| `≤ 1024px` (tablet) | Nav links hidden, hamburger shown; about/awards/experience go 2-col; testimonials show 2 cards |
-| `≤ 640px` (mobile) | Most grids go 1-col; hero actions stack; gallery goes 2-col masonry; form rows stack |
-| `≤ 400px` | Hero stats hidden; gallery 1-col; awards 1-col |
+| `≤ 1024px` (tablet) | Nav links hidden, hamburger shown; about/awards/experience go 2-col; testimonials show 2 cards; hero stats tightened |
+| `≤ 640px` (mobile) | Most grids go 1-col; hero title scales via `clamp(2.8rem, 14vw, 4.5rem)`; hero buttons full-width; about image `16/9`; awards 1-col; gallery 2-col masonry; form rows stack; contact + reservation details centre-stack; lightbox arrows smaller; Reserve FAB shows label always |
+| `≤ 480px` (small phones) | Gallery 1-col; experience features 1-col; footer newsletter stacks; menu search min-width removed; FABs 46 px; testimonials rating wraps; press logos tighter gap; contact hours smaller font |
+| `≤ 400px` (very small) | Hero stats hidden; section spacing tightened (`--space-3xl: 3rem`); about values go 1-col |
 | `prefers-reduced-motion` | All animations/transitions set to 0.01ms |
+
+**Anchor navigation:** `html` has `scroll-padding-top: var(--nav-h)` so fixed-nav doesn't cover scroll targets. `overflow-x: hidden` is on `body` only — putting it on `html` breaks smooth-scroll anchor navigation on mobile browsers.
 
 ---
 
@@ -468,3 +488,4 @@ All in `<head>` of `index.html`:
 12. **Social links:** Replace all `href="#"` on `.contact__social-link` and footer social icons
 13. **Hero stats:** Update `data-count` values and `.hero__stat-label` text to match the real restaurant
 14. **SEO:** Update `<title>`, meta description, keywords, canonical URL, and all OG/Twitter tags
+15. **Reserve links:** All "Reserve a Table" / "Book a Table" links already point to `#reservationForm`. If the form element ID changes, update every `href="#reservationForm"` in `index.html`
