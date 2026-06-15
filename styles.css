@@ -2167,6 +2167,24 @@ select.form-control {
   .form-row { grid-template-columns: 1fr; }
   .reservation__form-wrap { padding: 1.75rem 1.25rem; }
 
+  /* Reservation details — centre-stack on mobile */
+  .reservation__details { align-items: center; }
+  .reservation__detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .35rem;
+  }
+  .reservation__detail-icon { margin-top: 0; }
+
+  /* FABs — make all circular on mobile to minimise footprint */
+  .fab--primary, .fab--whatsapp {
+    width: 46px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
   .gallery__masonry { columns: 2; }
 
   /* Fix 2: awards — 2-col too cramped on mobile */
