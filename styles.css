@@ -92,7 +92,7 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
+  scroll-padding-top: var(--nav-h);
 }
 
 body {
@@ -2177,12 +2177,15 @@ select.form-control {
   }
   .reservation__detail-icon { margin-top: 0; }
 
-  /* FABs — make all circular on mobile to minimise footprint */
-  .fab--primary, .fab--whatsapp {
-    width: 46px;
-    padding: 0;
-    justify-content: center;
-    border-radius: 50%;
+  /* FABs — primary keeps pill + visible label; secondary two stay circular */
+  .fab--primary {
+    padding: 0 1.1rem 0 .85rem;
+    border-radius: 50px;
+  }
+  .fab--primary .fab__label {
+    max-width: 80px;
+    opacity: 1;
+    font-size: .72rem;
   }
 
   .gallery__masonry { columns: 2; }
