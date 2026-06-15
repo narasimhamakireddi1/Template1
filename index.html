@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zaffran — Award-winning modern Indian fine dining in New York City. Experience heirloom recipes, artisan spice blends, and saffron-kissed dishes crafted by Chef Arjun Mehta. Reserve your table today." />
+  <meta name="keywords" content="Indian fine dining, best Indian restaurant NYC, modern Indian cuisine, Indian restaurant New York, Zaffran, tandoori, biryani, upscale Indian restaurant, Indian restaurant near me" />
+  <meta name="author" content="Zaffran" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zaffrannyc.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Zaffran | Modern Indian Fine Dining — New York City" />
+  <meta property="og:description" content="Where Ancient Spice Meets Modern Soul. Award-winning Indian cuisine from Chef Arjun Mehta." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1200&q=80" />
+  <meta property="og:url" content="https://zaffrannyc.com/" />
+  <meta property="og:site_name" content="Zaffran" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zaffran | Modern Indian Fine Dining" />
+  <meta name="twitter:description" content="Where Ancient Spice Meets Modern Soul." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1200&q=80" />
+
+  <title>Zaffran | Modern Indian Fine Dining — New York City</title>
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Zaffran",
+    "description": "Award-winning modern Indian fine dining restaurant offering heirloom recipes elevated with contemporary technique.",
+    "url": "https://zaffrannyc.com",
+    "telephone": "+1-555-876-5432",
+    "email": "reservations@zaffrannyc.com",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1200&q=80",
+    "priceRange": "$$$",
+    "servesCuisine": ["Indian", "Modern Indian", "Fine Dining"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "218 East 58th Street",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10022",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "40.7614",
+      "longitude": "-73.9680"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday"],
+        "opens": "17:30",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday","Saturday"],
+        "opens": "17:30",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "12:00",
+        "closes": "21:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1243"
+    },
+    "hasMap": "https://maps.google.com/?q=Zaffran+New+York",
+    "sameAs": [
+      "https://www.instagram.com/zaffrannyc",
+      "https://www.facebook.com/zaffrannyc"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo" aria-label="Zaffran Home">
+        <span class="nav__logo-icon">✦</span>
+        <span class="nav__logo-text">Zaffran</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about" class="nav__link">Our Story</a></li>
+        <li><a href="#dishes" class="nav__link">Signature Dishes</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#gallery" class="nav__link">Gallery</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+          <span class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+          <span class="theme-toggle__icon theme-toggle__icon--moon">☽</span>
+        </button>
+        <a href="#reservation" class="btn btn--primary btn--sm nav__cta">Reserve Table</a>
+        <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" id="mobileClose" aria-label="Close menu">✕</button>
+    <nav class="mobile-menu__nav">
+      <a href="#about" class="mobile-menu__link">Our Story</a>
+      <a href="#dishes" class="mobile-menu__link">Signature Dishes</a>
+      <a href="#menu" class="mobile-menu__link">Menu</a>
+      <a href="#experience" class="mobile-menu__link">Experience</a>
+      <a href="#gallery" class="mobile-menu__link">Gallery</a>
+      <a href="#testimonials" class="mobile-menu__link">Reviews</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
+      <a href="#reservation" class="btn btn--primary mobile-menu__btn">Reserve a Table</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p>+1 (555) 876-5432</p>
+      <p>reservations@zaffrannyc.com</p>
+    </div>
+  </div>
+  <div class="mobile-menu__overlay" id="menuOverlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+          alt="Exquisite Indian fine dining spread at Zaffran restaurant New York"
+          class="hero__img"
+          fetchpriority="high"
+        />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__eyebrow reveal">Est. 2011 &nbsp;·&nbsp; New York City</div>
+        <h1 class="hero__title reveal reveal--delay-1">
+          <span>Zaffran</span>
+        </h1>
+        <p class="hero__tagline reveal reveal--delay-2">Where Ancient Spice Meets Modern Soul</p>
+        <div class="hero__actions reveal reveal--delay-3">
+          <a href="#reservation" class="btn btn--primary btn--lg">Reserve a Table</a>
+          <a href="#menu" class="btn btn--ghost btn--lg">View Menu</a>
+        </div>
+      </div>
+
+      <div class="hero__stats reveal reveal--delay-4">
+        <div class="hero__stat">
+          <strong class="hero__stat-num" data-count="13">0</strong>
+          <span class="hero__stat-label">Years of Excellence</span>
+        </div>
+        <div class="hero__stat-divider" aria-hidden="true"></div>
+        <div class="hero__stat">
+          <strong class="hero__stat-num" data-count="2">0</strong>
+          <span class="hero__stat-label">Michelin Stars</span>
+        </div>
+        <div class="hero__stat-divider" aria-hidden="true"></div>
+        <div class="hero__stat">
+          <strong class="hero__stat-num" data-count="1243">0</strong>
+          <span class="hero__stat-label">5-Star Reviews</span>
+        </div>
+        <div class="hero__stat-divider" aria-hidden="true"></div>
+        <div class="hero__stat">
+          <strong class="hero__stat-num" data-count="149">0</strong>
+          <span class="hero__stat-label">Spices Mastered</span>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about" aria-label="About Zaffran">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__images">
+            <div class="about__img-main reveal">
+              <img
+                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Chef Arjun Mehta crafting a dish in the Zaffran kitchen — precision and passion"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__img-accent reveal reveal--delay-1">
+              <img
+                src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                alt="Rich aromatic Indian curry — the soul of Zaffran's kitchen"
+                loading="lazy"
+              />
+              <div class="about__img-badge">
+                <span>Chef's</span>
+                <strong>Pride</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <div class="section-eyebrow reveal">Our Story</div>
+            <h2 class="section-title reveal reveal--delay-1">A Legacy Born<br /><em>From Heritage</em></h2>
+            <p class="about__lead reveal reveal--delay-2">
+              Rooted in the royal kitchens of Rajasthan and refined at the finest tables of Paris, Chef Arjun Mehta founded Zaffran in 2011 with one purpose — to bring India's most extraordinary culinary traditions to the world stage.
+            </p>
+            <p class="about__text reveal reveal--delay-3">
+              Zaffran — named for the world's most precious spice — is a celebration of India's 5,000-year culinary story. Every dish is a bridge between heirloom recipes passed down through generations and contemporary fine dining technique. We source single-estate spices, hand-press our own oils, and slow-cook curries the way maharajas once demanded — with patience, precision, and devotion.
+            </p>
+            <blockquote class="about__quote reveal reveal--delay-3">
+              <p>"Indian cuisine is not just food. It is memory, ritual, and love — layered in a single bite."</p>
+              <cite>— Chef Arjun Mehta</cite>
+            </blockquote>
+            <div class="about__values reveal reveal--delay-4">
+              <div class="about__value">
+                <span class="about__value-icon">🌿</span>
+                <strong>Farm to Tandoor</strong>
+                <p>Single-estate spices, seasonal produce</p>
+              </div>
+              <div class="about__value">
+                <span class="about__value-icon">🏆</span>
+                <strong>Michelin Starred</strong>
+                <p>2 Stars — recognised since 2017</p>
+              </div>
+              <div class="about__value">
+                <span class="about__value-icon">🫙</span>
+                <strong>149 Spices</strong>
+                <p>Hand-blended masalas, nothing from a packet</p>
+              </div>
+            </div>
+            <a href="#reservation" class="btn btn--primary reveal reveal--delay-4">Book Your Experience</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SIGNATURE DISHES ===== -->
+    <section class="dishes section section--dark" id="dishes" aria-label="Signature dishes">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">Culinary Masterpieces</div>
+          <h2 class="section-title">Signature <em>Dishes</em></h2>
+          <p class="section-subtitle">Each plate tells a story of region, season, and memory — composed with classical Indian technique and a modern eye.</p>
+        </div>
+
+        <div class="dishes__grid">
+
+          <article class="dish-card reveal" data-category="starters">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Galouti Kebab — Lucknowi melt-in-mouth lamb patties with 149 spices and warqi paratha"
+                loading="lazy"
+              />
+              <span class="dish-card__badge">Chef's Pride</span>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__meta">
+                <span class="dish-card__category">Starter</span>
+                <span class="dish-card__price">$26</span>
+              </div>
+              <h3 class="dish-card__title">Galouti Kebab</h3>
+              <p class="dish-card__desc">Lucknowi-style ground lamb, 149-spice blend, raw papaya tenderiser, saffron aioli, warqi paratha</p>
+              <div class="dish-card__footer">
+                <div class="dish-card__stars" aria-label="5 stars">★★★★★</div>
+                <span class="dish-card__tag">⭐ Most Loved</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal--delay-1" data-category="mains">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Butter Chicken Royale — velvety tomato-fenugreek sauce with free-range chicken"
+                loading="lazy"
+              />
+              <span class="dish-card__badge dish-card__badge--gold">Signature</span>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__meta">
+                <span class="dish-card__category">Main</span>
+                <span class="dish-card__price">$42</span>
+              </div>
+              <h3 class="dish-card__title">Butter Chicken Royale</h3>
+              <p class="dish-card__desc">Free-range chicken, 48-hour tomato velvet sauce, fenugreek butter, hand-churned cream, stone-ground spices</p>
+              <div class="dish-card__footer">
+                <div class="dish-card__stars" aria-label="5 stars">★★★★★</div>
+                <span class="dish-card__tag">🍛 #1 Ordered</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal--delay-2" data-category="mains">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Zaffran Dum Biryani — saffron-layered aged Basmati rice slow-cooked to order"
+                loading="lazy"
+              />
+              <span class="dish-card__badge dish-card__badge--gold">House Special</span>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__meta">
+                <span class="dish-card__category">Main</span>
+                <span class="dish-card__price">$48</span>
+              </div>
+              <h3 class="dish-card__title">Zaffran Dum Biryani</h3>
+              <p class="dish-card__desc">10-year aged Basmati, Persian saffron layers, slow-cooked in sealed handi, house raita, mirchi salan</p>
+              <div class="dish-card__footer">
+                <div class="dish-card__stars" aria-label="5 stars">★★★★★</div>
+                <span class="dish-card__tag">🌟 Award Winner</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal--delay-3" data-category="desserts">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Rasmalai Tres Leches — deconstructed rasmalai with saffron milk foam and edible silver"
+                loading="lazy"
+              />
+              <span class="dish-card__badge dish-card__badge--rose">Dessert</span>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__meta">
+                <span class="dish-card__category">Dessert</span>
+                <span class="dish-card__price">$16</span>
+              </div>
+              <h3 class="dish-card__title">Rasmalai Tres Leches</h3>
+              <p class="dish-card__desc">Deconstructed rasmalai, Persian saffron milk foam, pistachio crumble, rose petal gel, edible silver</p>
+              <div class="dish-card__footer">
+                <div class="dish-card__stars" aria-label="5 stars">★★★★★</div>
+                <span class="dish-card__tag">🍮 Guest Favourite</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-category="starters">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Tandoori Jhinga — tiger prawns in saffron-yoghurt marinade from the clay oven"
+                loading="lazy"
+              />
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__meta">
+                <span class="dish-card__category">Starter</span>
+                <span class="dish-card__price">$34</span>
+              </div>
+              <h3 class="dish-card__title">Tandoori Jhinga</h3>
+              <p class="dish-card__desc">Wild tiger prawns, saffron-yoghurt marinade, ajwain, charred in 900°C clay tandoor, mint chutney, micro salad</p>
+              <div class="dish-card__footer">
+                <div class="dish-card__stars" aria-label="5 stars">★★★★★</div>
+                <span class="dish-card__tag">🌟 Tasting Menu</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal reveal--delay-1" data-category="mains">
+            <div class="dish-card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Dal Makhani — 24-hour slow-cooked black lentils with smoked butter and single cream"
+                loading="lazy"
+              />
+              <span class="dish-card__badge dish-card__badge--green">Vegetarian</span>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__meta">
+                <span class="dish-card__category">Main</span>
+                <span class="dish-card__price">$28</span>
+              </div>
+              <h3 class="dish-card__title">Dal Makhani</h3>
+              <p class="dish-card__desc">Overnight Punjabi black lentils, wood-smoked butter, single cream reduction, fresh fenugreek, stone-ground spices</p>
+              <div class="dish-card__footer">
+                <div class="dish-card__stars" aria-label="5 stars">★★★★★</div>
+                <span class="dish-card__tag">👨‍🍳 Chef Recommends</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="dishes__cta reveal">
+          <a href="#menu" class="btn btn--outline btn--lg">Explore Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERACTIVE MENU ===== -->
+    <section class="menu-section section" id="menu" aria-label="Interactive menu">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">Curated Selections</div>
+          <h2 class="section-title">Our <em>Menu</em></h2>
+          <p class="section-subtitle">Composed with seasonal intent and classical Indian mastery. Use filters to explore our full offerings.</p>
+        </div>
+
+        <div class="menu-controls reveal">
+          <div class="menu-search">
+            <span class="menu-search__icon" aria-hidden="true">🔍</span>
+            <input
+              type="search"
+              id="menuSearch"
+              class="menu-search__input"
+              placeholder="Search dishes, spices, ingredients…"
+              aria-label="Search menu items"
+            />
+          </div>
+          <div class="menu-filters" role="group" aria-label="Menu category filters">
+            <button class="menu-filter active" data-filter="all">All</button>
+            <button class="menu-filter" data-filter="starters">Starters</button>
+            <button class="menu-filter" data-filter="mains">Mains</button>
+            <button class="menu-filter" data-filter="breads">Breads &amp; Rice</button>
+            <button class="menu-filter" data-filter="desserts">Desserts</button>
+            <button class="menu-filter" data-filter="beverages">Beverages</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" role="list">
+
+          <!-- Starters -->
+          <div class="menu-item" data-category="starters" data-name="galouti kebab starters lamb" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Galouti Kebab</h3>
+                <p class="menu-item__desc">Lucknowi ground lamb, 149-spice blend, raw papaya tenderiser, saffron aioli, warqi paratha</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                  <span class="tag tag--chef">👨‍🍳 Chef's Choice</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$26</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="starters" data-name="tandoori jhinga prawns starters seafood" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Tandoori Jhinga</h3>
+                <p class="menu-item__desc">Wild tiger prawns, saffron-yoghurt marinade, ajwain, charred in clay tandoor, mint chutney</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$34</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="starters" data-name="dahi ke sholay starters vegetarian" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Dahi Ke Sholay</h3>
+                <p class="menu-item__desc">Crispy phyllo parcels of hung yoghurt, pomegranate seeds, tamarind chutney, date reduction</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$18</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="starters" data-name="burrah kebab lamb chops starters" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Burrah Kebab</h3>
+                <p class="menu-item__desc">Overnight-marinated lamb chops, raw papaya, chaat masala, pickled onion, green chutney</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--chef">👨‍🍳 Chef's Choice</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$32</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="starters" data-name="mushroom galouti vegetarian starters" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Mushroom Galouti</h3>
+                <p class="menu-item__desc">Wild mushroom kebab, cashew cream, black truffle oil, micro watercress, house spice blend</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$24</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="starters" data-name="soup mulligatawny starters vegetarian" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Mulligatawny Velouté</h3>
+                <p class="menu-item__desc">Refined lentil broth, coconut cream swirl, turmeric oil, crispy lentil croutons, coriander</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$16</span>
+            </div>
+          </div>
+
+          <!-- Mains -->
+          <div class="menu-item" data-category="mains" data-name="butter chicken royale mains chicken" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Butter Chicken Royale</h3>
+                <p class="menu-item__desc">Free-range chicken, 48-hour tomato velvet sauce, fenugreek butter, hand-churned cream</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                  <span class="tag tag--chef">👨‍🍳 Chef's Pride</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$42</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mains" data-name="zaffran dum biryani mains rice" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Zaffran Dum Biryani</h3>
+                <p class="menu-item__desc">10-year aged Basmati, saffron, sealed handi slow-cook, house raita, mirchi salan (lamb / chicken / vegetable)</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$48</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mains" data-name="rogan josh lamb mains kashmiri" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Kashmiri Rogan Josh</h3>
+                <p class="menu-item__desc">Slow-braised lamb shoulder, Kashmiri dry red chillies, fennel seeds, Cockscomb flower, 6-hour bone jus</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--chef">👨‍🍳 Chef's Choice</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$46</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mains" data-name="malabar crab curry mains seafood" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Malabar Crab Curry</h3>
+                <p class="menu-item__desc">Whole Dungeness crab, Kerala coconut milk, curry leaf-tempered oil, raw mango, Appam</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$58</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mains" data-name="dal makhani vegetarian mains lentils" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Dal Makhani</h3>
+                <p class="menu-item__desc">Overnight Punjabi black lentils, wood-smoked butter, single cream, fresh fenugreek, stone-ground spices</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$28</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="mains" data-name="paneer tikka makhana vegetarian mains" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Paneer Tikka Makhana</h3>
+                <p class="menu-item__desc">Tandoor-kissed cottage cheese, lotus seeds, peppered cashew cream, saffron-tomato gravy</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$32</span>
+            </div>
+          </div>
+
+          <!-- Breads & Rice -->
+          <div class="menu-item" data-category="breads" data-name="warqi paratha breads layered" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Warqi Paratha</h3>
+                <p class="menu-item__desc">Multi-layered flaky whole-wheat bread, cultured butter, slow hand-rolled</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$8</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="breads" data-name="tandoori naan breads clay oven" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Peshwari Naan</h3>
+                <p class="menu-item__desc">Clay-oven baked, stuffed with coconut, almond paste, and sultanas, finished with saffron butter</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                  <span class="tag tag--chef">👨‍🍳 House Favourite</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$9</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="breads" data-name="saffron rice pilaf breads" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Zaffrani Pulao</h3>
+                <p class="menu-item__desc">Persian saffron-steamed Basmati, whole spices, fried shallots, fresh herbs, kewra water</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$12</span>
+            </div>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-item" data-category="desserts" data-name="rasmalai tres leches desserts vegetarian" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Rasmalai Tres Leches</h3>
+                <p class="menu-item__desc">Deconstructed rasmalai, saffron milk foam, pistachio crumble, rose petal gel, edible silver leaf</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$16</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="desserts" data-name="gulab jamun souffle desserts vegetarian" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Gulab Jamun Soufflé</h3>
+                <p class="menu-item__desc">Warm cardamom soufflé, rose-scented khoya ice cream, pistachio praline, edible gold</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                  <span class="tag tag--chef">👨‍🍳 Chef's Choice</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$18</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="desserts" data-name="shahi tukda desserts vegetarian" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Shahi Tukda</h3>
+                <p class="menu-item__desc">Royal bread pudding, condensed milk rabri, crushed pistachios, rose water, edible silver vark</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                  <span class="tag tag--star">⭐ Star Dish</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$18</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="desserts" data-name="jalebi rabri desserts vegetarian" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Jalebi &amp; Rabri</h3>
+                <p class="menu-item__desc">Freshly fried crispy spirals, cold saffron-thickened milk, crushed rose petals, kesar</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$14</span>
+            </div>
+          </div>
+
+          <!-- Beverages -->
+          <div class="menu-item" data-category="beverages" data-name="signature lassi beverages" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Zaffran Signature Lassi</h3>
+                <p class="menu-item__desc">Rose &amp; saffron, Wild mango, or Salted cardamom — thick churned yoghurt, fresh fruit</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                  <span class="tag tag--star">⭐ House Special</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$12</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="beverages" data-name="masala chai ceremony beverages" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Masala Chai Ceremony</h3>
+                <p class="menu-item__desc">Single-estate Darjeeling, whole spices, ceremonial copper kettle, house-made biscuits</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--veg">🌿 Vegetarian</span>
+                  <span class="tag tag--chef">☕ Ritual</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$14</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="beverages" data-name="craft cocktails beverages indian" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Spice Route Cocktails</h3>
+                <p class="menu-item__desc">Tamarind Old Fashioned, Cardamom Negroni, Rose Gimlet, Mango &amp; Chilli Margarita</p>
+              </div>
+              <span class="menu-item__price">$18–26</span>
+            </div>
+          </div>
+
+          <div class="menu-item" data-category="beverages" data-name="indian wine selection beverages" role="listitem">
+            <div class="menu-item__header">
+              <div class="menu-item__info">
+                <h3 class="menu-item__name">Curated Wine Selection</h3>
+                <p class="menu-item__desc">Award-winning Indian labels (Sula, Fratelli, Grover Zampa) plus global sommelier picks</p>
+                <div class="menu-item__tags">
+                  <span class="tag tag--chef">🍷 Sommelier Pick</span>
+                </div>
+              </div>
+              <span class="menu-item__price">$16+</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="menu-empty" id="menuEmpty" aria-live="polite" hidden>
+          <p>No dishes found. Try a different search term.</p>
+        </div>
+
+        <p class="menu-note reveal">
+          ✦ Menu changes seasonally · All spice blends are house-made · Allergen &amp; Jain/Vegan options available on request · 12.5% service charge applies
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== DINING EXPERIENCE ===== -->
+    <section class="experience section section--dark" id="experience" aria-label="Dining experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">More Than a Meal</div>
+          <h2 class="section-title">The Dining <em>Experience</em></h2>
+          <p class="section-subtitle">From intimate dinners to landmark celebrations, every space at Zaffran is designed to transport you.</p>
+        </div>
+
+        <div class="experience__grid">
+          <div class="experience__card experience__card--large reveal">
+            <img
+              src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+              alt="Main dining hall at Zaffran with warm saffron lighting and hand-painted Mughal murals"
+              loading="lazy"
+            />
+            <div class="experience__card-overlay">
+              <h3>The Darbar Hall</h3>
+              <p>Seating for 65 guests beneath hand-painted Mughal miniatures and saffron-silk drapes</p>
+            </div>
+          </div>
+
+          <div class="experience__card reveal reveal--delay-1">
+            <img
+              src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Zenana Suite private dining room at Zaffran — intimate and elegantly decorated"
+              loading="lazy"
+            />
+            <div class="experience__card-overlay">
+              <h3>The Zenana Suite</h3>
+              <p>Private room for up to 18 guests — exclusive events &amp; celebrations</p>
+            </div>
+          </div>
+
+          <div class="experience__card reveal reveal--delay-2">
+            <img
+              src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="The Spice Route Bar at Zaffran featuring Indian-inspired craft cocktails"
+              loading="lazy"
+            />
+            <div class="experience__card-overlay">
+              <h3>The Spice Route Bar</h3>
+              <p>Indian whisky, spice-infused cocktails &amp; rare spirits</p>
+            </div>
+          </div>
+
+          <div class="experience__card reveal reveal--delay-1">
+            <img
+              src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Terrace dining at Zaffran with jasmine-draped pergola and evening ambiance"
+              loading="lazy"
+            />
+            <div class="experience__card-overlay">
+              <h3>Jasmine Terrace</h3>
+              <p>Al fresco dining under string lights and fragrant jasmine</p>
+            </div>
+          </div>
+
+          <div class="experience__card experience__card--large reveal reveal--delay-2">
+            <img
+              src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80"
+              alt="Maharaja's Table — Chef Arjun Mehta's exclusive open-kitchen tasting experience"
+              loading="lazy"
+            />
+            <div class="experience__card-overlay">
+              <h3>The Maharaja's Table</h3>
+              <p>Chef Arjun Mehta's exclusive 9-course tasting journey in the open kitchen — our most immersive experience</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience__features reveal">
+          <div class="experience__feature">
+            <span class="experience__feature-icon">🎊</span>
+            <h4>Private Events</h4>
+            <p>Weddings, engagements, corporate dinners</p>
+          </div>
+          <div class="experience__feature">
+            <span class="experience__feature-icon">👨‍👩‍👧</span>
+            <h4>Family Sundays</h4>
+            <p>Elaborate thali buffet with children's menu</p>
+          </div>
+          <div class="experience__feature">
+            <span class="experience__feature-icon">🌸</span>
+            <h4>Festival Menus</h4>
+            <p>Diwali, Eid, Holi, and New Year feasts</p>
+          </div>
+          <div class="experience__feature">
+            <span class="experience__feature-icon">💍</span>
+            <h4>Proposals</h4>
+            <p>Let us make your moment unforgettable</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section" id="testimonials" aria-label="Customer testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">Guest Voices</div>
+          <h2 class="section-title">What Our Guests <em>Say</em></h2>
+          <div class="testimonials__rating-summary reveal">
+            <div class="testimonials__stars" aria-label="4.9 out of 5 stars">★★★★★</div>
+            <strong>4.9 / 5</strong>
+            <span>· 1,243 verified reviews</span>
+            <a href="https://g.page/zaffran-nyc" rel="noopener noreferrer" target="_blank" class="testimonials__google-link">View on Google ↗</a>
+          </div>
+        </div>
+
+        <div class="testimonials__carousel" id="testimonialsCarousel" aria-label="Customer reviews carousel">
+          <div class="testimonials__track" id="testimonialsTrack">
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "The Galouti Kebab at Zaffran is the single most extraordinary thing I have eaten in New York. It dissolves on your tongue and every spice makes itself known perfectly. Chef Mehta is a genius."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">JM</div>
+                <div>
+                  <strong class="testimonial-card__name">James Morrison</strong>
+                  <span class="testimonial-card__meta">Google Review · 2 weeks ago</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "As someone who grew up eating my grandmother's biryani, I was sceptical. Zaffran's Dum Biryani not only matched it — it surpassed it. The saffron fragrance when they opened the sealed handi was cinematic."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">PK</div>
+                <div>
+                  <strong class="testimonial-card__name">Priya Krishnamurti</strong>
+                  <span class="testimonial-card__meta">Google Review · 1 month ago</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "The Maharaja's Table is an experience I'll talk about for the rest of my life. Nine courses of pure storytelling through food. Every dish came with a history lesson. Book it immediately."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">RP</div>
+                <div>
+                  <strong class="testimonial-card__name">Robert Patel</strong>
+                  <span class="testimonial-card__meta">Google Review · 3 months ago</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "I've eaten Indian food across Mumbai, Delhi, London, and New York. Zaffran's Butter Chicken Royale is objectively the best I've ever had. The service is flawless and the space is stunning."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">LA</div>
+                <div>
+                  <strong class="testimonial-card__name">Lucía Alvarez</strong>
+                  <span class="testimonial-card__meta">Google Review · 1 week ago</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "We hosted a Diwali dinner for 30 guests in the Zenana Suite. The team went above and beyond — diya arrangements, custom menu, personalised mithai. Every guest is still talking about it."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">DW</div>
+                <div>
+                  <strong class="testimonial-card__name">Divya Walia</strong>
+                  <span class="testimonial-card__meta">Google Review · 2 months ago</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 stars">★★★★★</div>
+              <blockquote class="testimonial-card__quote">
+                "My husband is a meat-eater but chose the Mushroom Galouti and Dal Makhani. He said it was better than any meat dish he'd had anywhere. Zaffran makes vegetarian food feel truly luxurious."
+              </blockquote>
+              <div class="testimonial-card__author">
+                <div class="testimonial-card__avatar" aria-hidden="true">NK</div>
+                <div>
+                  <strong class="testimonial-card__name">Nina Kowalski</strong>
+                  <span class="testimonial-card__meta">Google Review · 3 weeks ago</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="testimonials__controls">
+          <button class="testimonials__btn" id="testimonialPrev" aria-label="Previous testimonial">←</button>
+          <div class="testimonials__dots" id="testimonialDots" role="tablist" aria-label="Testimonial navigation"></div>
+          <button class="testimonials__btn" id="testimonialNext" aria-label="Next testimonial">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESERVATION ===== -->
+    <section class="reservation section section--dark" id="reservation" aria-label="Table reservation">
+      <div class="container">
+        <div class="reservation__grid">
+          <div class="reservation__content">
+            <div class="section-eyebrow reveal">Book Your Table</div>
+            <h2 class="section-title reveal reveal--delay-1">Reserve Your <em>Experience</em></h2>
+            <p class="reveal reveal--delay-2">Join us for an evening of extraordinary Indian cuisine. We look forward to welcoming you to Zaffran.</p>
+
+            <div class="reservation__details reveal reveal--delay-3">
+              <div class="reservation__detail">
+                <span class="reservation__detail-icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <p>218 East 58th Street, New York, NY 10022</p>
+                </div>
+              </div>
+              <div class="reservation__detail">
+                <span class="reservation__detail-icon">📞</span>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:+15558765432">+1 (555) 876-5432</a></p>
+                </div>
+              </div>
+              <div class="reservation__detail">
+                <span class="reservation__detail-icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:reservations@zaffrannyc.com">reservations@zaffrannyc.com</a></p>
+                </div>
+              </div>
+              <div class="reservation__detail">
+                <span class="reservation__detail-icon">🕐</span>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Tue–Thu: 5:30pm–10pm<br />Fri–Sat: 5:30pm–11pm<br />Sun: Noon–9pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reservation__form-wrap reveal reveal--delay-2">
+            <form class="reservation__form" id="reservationForm" novalidate aria-label="Reservation form">
+              <h3 class="reservation__form-title">Book a Table</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName" class="form-label">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Arjun" required autocomplete="given-name" />
+                  <span class="form-error" id="firstNameError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="lastName" class="form-label">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Mehta" required autocomplete="family-name" />
+                  <span class="form-error" id="lastNameError" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required autocomplete="email" />
+                  <span class="form-error" id="emailError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 (555) 000-0000" required autocomplete="tel" />
+                  <span class="form-error" id="phoneError" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date" class="form-label">Preferred Date *</label>
+                  <input type="date" id="date" name="date" class="form-control" required />
+                  <span class="form-error" id="dateError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="time" class="form-label">Preferred Time *</label>
+                  <select id="time" name="time" class="form-control" required>
+                    <option value="">Select time</option>
+                    <option value="17:30">5:30 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </select>
+                  <span class="form-error" id="timeError" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guests" class="form-label">Number of Guests *</label>
+                  <select id="guests" name="guests" class="form-control" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7">7 Guests</option>
+                    <option value="8">8+ Guests (please call)</option>
+                  </select>
+                  <span class="form-error" id="guestsError" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="occasion" class="form-label">Special Occasion</label>
+                  <select id="occasion" name="occasion" class="form-control">
+                    <option value="">None</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="proposal">Proposal</option>
+                    <option value="diwali">Diwali Celebration</option>
+                    <option value="business">Business Dinner</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dietary" class="form-label">Dietary Requirements</label>
+                <select id="dietary" name="dietary" class="form-control">
+                  <option value="">None</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="vegan">Vegan</option>
+                  <option value="jain">Jain</option>
+                  <option value="halal">Halal</option>
+                  <option value="glutenfree">Gluten Free</option>
+                  <option value="other">Other — please specify in notes</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="notes" class="form-label">Special Requests</label>
+                <textarea id="notes" name="notes" class="form-control form-textarea" placeholder="Allergies, seating preferences, special arrangements, or anything else we should know…" rows="3"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <span class="btn__text">Confirm Reservation</span>
+                <span class="btn__loading" hidden>Sending…</span>
+              </button>
+
+              <p class="form-disclaimer">We'll confirm your reservation within 2 hours. By submitting, you agree to our cancellation policy.</p>
+            </form>
+
+            <div class="reservation__success" id="reservationSuccess" hidden aria-live="polite">
+              <div class="reservation__success-icon">✓</div>
+              <h3>Reservation Received!</h3>
+              <p>Shukriya! We'll confirm your table within 2 hours at the email provided. We look forward to welcoming you to Zaffran.</p>
+              <a href="#menu" class="btn btn--outline">Explore Our Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery section" id="gallery" aria-label="Photo gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">Visual Story</div>
+          <h2 class="section-title">Our <em>Gallery</em></h2>
+          <p class="section-subtitle">A glimpse into the world of Zaffran — food, artistry, atmosphere, and the moments that matter.</p>
+        </div>
+
+        <div class="gallery-filters reveal">
+          <button class="gallery-filter active" data-gfilter="all">All</button>
+          <button class="gallery-filter" data-gfilter="food">Food</button>
+          <button class="gallery-filter" data-gfilter="interior">Interior</button>
+          <button class="gallery-filter" data-gfilter="events">Events</button>
+          <button class="gallery-filter" data-gfilter="chef">Chef</button>
+        </div>
+
+        <div class="gallery__masonry" id="galleryMasonry">
+
+          <button class="gallery__item reveal" data-gcat="food" aria-label="View: Butter Chicken Royale close-up">
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Zaffran's Butter Chicken Royale — velvety saffron-orange tomato sauce with hand-churned cream swirl" loading="lazy" />
+          </button>
+
+          <button class="gallery__item gallery__item--tall reveal reveal--delay-1" data-gcat="interior" aria-label="View: The Darbar Hall dining room">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="The Darbar Hall at Zaffran — golden ambient lighting, hand-painted Mughal miniatures, silk drapery" loading="lazy" />
+          </button>
+
+          <button class="gallery__item reveal reveal--delay-2" data-gcat="chef" aria-label="View: Chef Arjun Mehta in the kitchen">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chef Arjun Mehta meticulously plating the signature Galouti Kebab with surgical precision" loading="lazy" />
+          </button>
+
+          <button class="gallery__item reveal" data-gcat="food" aria-label="View: Zaffran Dum Biryani in sealed handi">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Zaffran Dum Biryani served in traditional sealed copper handi — the ultimate saffron-rice experience" loading="lazy" />
+          </button>
+
+          <button class="gallery__item gallery__item--wide reveal reveal--delay-1" data-gcat="interior" aria-label="View: The Spice Route Bar">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="The Spice Route Bar at Zaffran — Indian whisky, craft cocktails, and rare spirits" loading="lazy" />
+          </button>
+
+          <button class="gallery__item reveal reveal--delay-2" data-gcat="food" aria-label="View: Dal Makhani close-up">
+            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Zaffran's 24-hour Dal Makhani — overnight Punjabi black lentils with wood-smoked butter swirl" loading="lazy" />
+          </button>
+
+          <button class="gallery__item gallery__item--tall reveal" data-gcat="events" aria-label="View: Private Diwali event in Zenana Suite">
+            <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Private Diwali celebration in Zaffran's Zenana Suite with diya arrangements and custom decor" loading="lazy" />
+          </button>
+
+          <button class="gallery__item reveal reveal--delay-1" data-gcat="food" aria-label="View: Rasmalai Tres Leches dessert">
+            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Zaffran's Rasmalai Tres Leches — deconstructed with saffron milk foam and edible silver leaf" loading="lazy" />
+          </button>
+
+          <button class="gallery__item reveal reveal--delay-2" data-gcat="food" aria-label="View: Tandoori Jhinga from the clay oven">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Wild tiger prawns charred in Zaffran's 900°C clay tandoor — crisp outside, succulent within" loading="lazy" />
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="Close image viewer">✕</button>
+      <button class="lightbox__prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+      <button class="lightbox__next" id="lightboxNext" aria-label="Next image">›</button>
+      <div class="lightbox__content">
+        <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+        <p class="lightbox__caption" id="lightboxCaption"></p>
+      </div>
+      <div class="lightbox__backdrop" id="lightboxBackdrop" aria-hidden="true"></div>
+    </div>
+
+    <!-- ===== AWARDS ===== -->
+    <section class="awards section section--dark" id="awards" aria-label="Awards and recognition">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">Recognition</div>
+          <h2 class="section-title">Awards &amp; <em>Honours</em></h2>
+        </div>
+
+        <div class="awards__grid">
+          <div class="award-card reveal">
+            <div class="award-card__icon">⭐⭐</div>
+            <h3 class="award-card__title">Michelin Guide</h3>
+            <p class="award-card__subtitle">Two Stars — 2017–2024</p>
+            <p class="award-card__desc">Excellent cooking — worth a detour</p>
+          </div>
+          <div class="award-card reveal reveal--delay-1">
+            <div class="award-card__icon">🏆</div>
+            <h3 class="award-card__title">James Beard Award</h3>
+            <p class="award-card__subtitle">Best New Restaurant, 2013</p>
+            <p class="award-card__desc">Named one of America's most important new restaurant openings</p>
+          </div>
+          <div class="award-card reveal reveal--delay-2">
+            <div class="award-card__icon">🌶️</div>
+            <h3 class="award-card__title">World's 50 Best</h3>
+            <p class="award-card__subtitle">#38 Best Restaurant, 2023</p>
+            <p class="award-card__desc">"The finest Indian restaurant outside the subcontinent"</p>
+          </div>
+          <div class="award-card reveal reveal--delay-3">
+            <div class="award-card__icon">📰</div>
+            <h3 class="award-card__title">NY Times</h3>
+            <p class="award-card__subtitle">Three Stars, 2022</p>
+            <p class="award-card__desc">"A revelation in Indian haute cuisine" — Pete Wells</p>
+          </div>
+        </div>
+
+        <div class="press reveal">
+          <p class="press__label">As Featured In</p>
+          <div class="press__logos">
+            <span class="press__logo">The New York Times</span>
+            <span class="press__divider" aria-hidden="true">·</span>
+            <span class="press__logo">Bon Appétit</span>
+            <span class="press__divider" aria-hidden="true">·</span>
+            <span class="press__logo">Food &amp; Wine</span>
+            <span class="press__divider" aria-hidden="true">·</span>
+            <span class="press__logo">Condé Nast Traveller</span>
+            <span class="press__divider" aria-hidden="true">·</span>
+            <span class="press__logo">Eater NY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section" id="contact" aria-label="Contact information">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-eyebrow">Find Us</div>
+          <h2 class="section-title">Visit <em>Us</em></h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Address</strong>
+                <address>218 East 58th Street<br />New York, NY 10022</address>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Reservations</strong>
+                <a href="tel:+15558765432" class="contact__link">+1 (555) 876-5432</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:reservations@zaffrannyc.com" class="contact__link">reservations@zaffrannyc.com</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon" aria-hidden="true">🕐</span>
+              <div>
+                <strong>Opening Hours</strong>
+                <table class="contact__hours">
+                  <tbody>
+                    <tr><td>Monday</td><td>Closed</td></tr>
+                    <tr><td>Tue – Thu</td><td>5:30 PM – 10:00 PM</td></tr>
+                    <tr><td>Fri – Sat</td><td>5:30 PM – 11:00 PM</td></tr>
+                    <tr><td>Sunday</td><td>12:00 PM – 9:00 PM</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="contact__social">
+              <strong>Follow Us</strong>
+              <div class="contact__social-links">
+                <a href="#" class="contact__social-link" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="Facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="Twitter / X">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="#" class="contact__social-link" aria-label="TikTok">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__map reveal reveal--delay-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2895889809714!2d-73.96812822346219!3d40.76144477138932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f4b00f7a09%3A0x5a8b3e4c5c9a2e41!2sEast%2058th%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1703123456789!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Zaffran restaurant location on Google Maps"
+              aria-label="Map showing Zaffran restaurant location at 218 East 58th Street, New York City"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="#hero" class="footer__logo" aria-label="Zaffran Home">
+              <span>✦</span> Zaffran
+            </a>
+            <p class="footer__tagline">Where Ancient Spice Meets Modern Soul</p>
+            <p class="footer__address">218 East 58th Street, New York, NY 10022</p>
+            <a href="tel:+15558765432" class="footer__phone">+1 (555) 876-5432</a>
+          </div>
+
+          <div class="footer__links">
+            <h4 class="footer__heading">Explore</h4>
+            <ul class="footer__list" role="list">
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#dishes">Signature Dishes</a></li>
+              <li><a href="#menu">Full Menu</a></li>
+              <li><a href="#experience">Dining Experience</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#awards">Awards</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <h4 class="footer__heading">Reserve</h4>
+            <ul class="footer__list" role="list">
+              <li><a href="#reservation">Book a Table</a></li>
+              <li><a href="#experience">Private Dining</a></li>
+              <li><a href="#experience">The Maharaja's Table</a></li>
+              <li><a href="tel:+15558765432">Call Us</a></li>
+              <li><a href="mailto:reservations@zaffrannyc.com">Email Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__newsletter">
+            <h4 class="footer__heading">Stay Inspired</h4>
+            <p>Seasonal menus, festival events, and Chef Arjun's notes — delivered to your inbox.</p>
+            <form class="footer__form" id="newsletterForm" novalidate>
+              <label for="newsletterEmail" class="sr-only">Your email address</label>
+              <input
+                type="email"
+                id="newsletterEmail"
+                name="email"
+                placeholder="Your email address"
+                class="footer__input"
+                required
+                autocomplete="email"
+                aria-label="Email address for newsletter"
+              />
+              <button type="submit" class="btn btn--primary footer__form-btn">Subscribe</button>
+            </form>
+            <p class="footer__form-note" id="newsletterMsg" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-inner">
+          <p class="footer__copyright">&copy; <span id="currentYear"></span> Zaffran. All rights reserved.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" aria-label="Twitter / X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+          <div class="footer__legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Actions -->
+  <div class="floating-actions" aria-label="Quick contact actions">
+    <a href="#reservation" class="fab fab--primary" aria-label="Reserve a table">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span class="fab__label">Reserve</span>
+    </a>
+    <a href="https://wa.me/15558765432" class="fab fab--whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a href="tel:+15558765432" class="fab fab--call" aria-label="Call us now">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 4.18 2 2 0 015 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 9.91a16 16 0 006.18 6.18l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
