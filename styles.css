@@ -2159,6 +2159,7 @@ select.form-control {
 
   .experience__grid { grid-template-columns: 1fr; }
   .experience__card--large { grid-column: 1; }
+  /* Fix 3: keep 2-col features above 480px; goes 1-col via the 480px rule below */
   .experience__features { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 
   .testimonial-card { flex: 0 0 calc(100% - 0px); }
@@ -2168,25 +2169,64 @@ select.form-control {
 
   .gallery__masonry { columns: 2; }
 
-  .awards__grid { grid-template-columns: 1fr 1fr; }
+  /* Fix 2: awards — 2-col too cramped on mobile */
+  .awards__grid { grid-template-columns: 1fr; }
+
+  /* Fix 7: lightbox nav arrows — smaller and closer to edges on mobile */
+  .lightbox__prev, .lightbox__next { width: 40px; height: 40px; font-size: 1.3rem; }
+  .lightbox__prev { left: .5rem; }
+  .lightbox__next { right: .5rem; }
+  .lightbox__close { top: .75rem; right: .75rem; }
 
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom-inner { flex-direction: column; text-align: center; gap: 1rem; }
 
   .floating-actions { bottom: 1.5rem; right: 1.25rem; gap: .6rem; }
 
+  /* Fix 1: about image — 3/4 is too tall on mobile */
+  .about__img-main img { aspect-ratio: 16/9; }
   .about__img-accent { right: 0; width: 48%; }
   .about__values { grid-template-columns: 1fr 1fr; gap: .75rem; }
   .about__values .about__value:last-child { grid-column: 1 / -1; }
 }
 
-@media (max-width: 400px) {
-  .hero__stats { display: none; }
+/* ≤480px — small phones */
+@media (max-width: 480px) {
+  /* Fix 3: experience feature tiles — 1 col on small phones */
+  .experience__features { grid-template-columns: 1fr; }
+
+  /* Fix 4: gallery — 1 col on small phones */
   .gallery__masonry { columns: 1; }
-  .awards__grid { grid-template-columns: 1fr; }
+
+  /* Fix 5: footer newsletter — stack input + button */
+  .footer__form { flex-direction: column; }
+  .footer__form-btn { width: 100%; }
+  .footer__form-btn .btn { width: 100%; justify-content: center; }
+
+  /* Fix 6: menu search — remove min-width in column layout */
+  .menu-search { min-width: 0; }
+
+  /* Fix 9: testimonials rating row — wrap on narrow screens */
+  .testimonials__rating-summary { flex-wrap: wrap; justify-content: center; gap: .5rem; }
+
+  /* Fix 10: press logos — tighter gap */
+  .press__logos { gap: 1rem; }
+
+  /* Fix 11: floating action buttons — smaller on mobile */
+  .fab { height: 46px; padding: 0 1rem 0 .85rem; font-size: .72rem; }
+  .fab--call { width: 46px; height: 46px; }
+
+  /* Fix 8: contact hours table — prevent overflow */
+  .contact__hours { font-size: .8rem; }
+  .contact__hours td { padding: .2rem .5rem .2rem 0; }
+}
+
+/* ≤400px — very small phones */
+@media (max-width: 400px) {
+  :root { --space-3xl: 3rem; }       /* Fix 12: tighter section spacing */
+  .hero__stats { display: none; }
   .about__values { grid-template-columns: 1fr; }
   .about__values .about__value:last-child { grid-column: auto; }
-  .experience__features { grid-template-columns: 1fr; }
 }
 
 /* Reduce motion */
